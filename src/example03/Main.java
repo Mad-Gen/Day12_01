@@ -42,7 +42,7 @@ public class Main {
     
     // 
     System.out.println("ソート後");
-    list1.sort(new Comparator<Student>() { // Comparator クラスを継承したクラスは非常に短くなるので以下のように直接newしてしまうことがあります。
+    list1.sort(new Comparator<Student>() { // Comparator インターフェースを継承したクラスは非常に短くなるので以下のように直接newしてしまうことがあります。
       @Override
       public int compare(Student s1, Student s2) {
         // 最初の引数が2番目の引数より小さい場合は負の整数、両方が等しい場合は0、最初の引数が2番目の引数より大きい場合は正の整数。
